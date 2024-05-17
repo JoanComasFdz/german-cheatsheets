@@ -2,7 +2,7 @@
 A collection of cheat sheets to learn German.
 
 # Cases
-![Cases](casus.png "Cases")
+![Cases](cases.png "Cases")
 
 # Declinations
 ![Declinations](declinations.png "Declinations")
