@@ -10,3 +10,5 @@
 | **Wasser**              | vom Meer / vom Strand                              | am Meer / am Strand                     | ans Meer / an den Strand                     |
 | **Gebäude**             | aus der Schule / aus dem Supermarkt / aus dem Kino | in der Schule / im Supermarkt / im Kino | in die Schule / in den Supermarkt / ins Kino |
 | **zu Hause**            | von zu Hause                                       | zu Hause                                | nach Hause                                   |
+| **Aktivitäten**         | von der Arbeit / vom Sport                         | bei der Arbeit / beim Sport             | zur Arbeit / zum Sport                       |
+| **Personen**            | vom Arzt / von meiner Schwester                    | beim Arzt / bei meiner Schwester        | zum Arzt / zu meiner Schwester               |
