@@ -1,5 +1,5 @@
-| **Lokale**           | **Woher?** (Genitiv)                               | **Wo?** (Dativ)                         | **Wohin?** (Akkusativ)                       |
-|-------------------------|----------------------------------------------------|------------------------------------------|---------------------------------------------|
+| **Lokale**              | **Woher?** Antwort: Dativ                          | **Wo?** Antwort: Dativ                  | **Wohin?** Antwort: Akkusativ                |
+|-------------------------|----------------------------------------------------|-----------------------------------------|----------------------------------------------|
 | **Städte**              | aus Luzern                                         | in Luzern                               | nach Luzern                                  |
 | **Länder ohne Artikel** | aus Spanien                                        | in Spanien                              | nach Spanien                                 |
 | **Länder mit Artikel**  | aus der Türkei / aus dem Kosovo                    | in der Türkei / im Kosovo               | in die Türkei / in den Kosovo                |
