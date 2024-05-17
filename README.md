@@ -7,5 +7,8 @@ A collection of cheat sheets to learn German.
 # Declinations
 ![Declinations](declinations.png "Declinations")
 
+# Woher, Wo, Wohin
+![Woher, Wo, Wohin](woher-wo-wohin.png "Woher, Wo, Wohin")
+
 # Lokale Präpositionen
 ![Lokale Präpositionen](lokale.png "Lokale Präpositionen")
