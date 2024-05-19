@@ -17,6 +17,9 @@ A collection of cheat sheets to learn German.
 ![Lokale Präpositionen](lokale.png "Lokale Präpositionen")
 
 # Wechselpräpositionen
+![9wechselnpraepositionen](9wechselnpraepositionen.png)
+
+Source: https://www.nthuleen.com/saddleback/review/Reading_Guide_15-1-Two_Way_Prepositions.pdf
 
 # Temporale Präpositionen (seite 38)
 
