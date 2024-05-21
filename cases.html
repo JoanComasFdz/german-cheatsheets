@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* From extension vscode.github */
+    /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+    .vscode-dark img[src$=\#gh-light-mode-only],
+    .vscode-light img[src$=\#gh-dark-mode-only],
+    .vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+    .vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+      display: none;
+    }
+  </style>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+  <style>
+    .task-list-item {
+      list-style-type: none;
+    }
+
+    .task-list-item-checkbox {
+      margin-left: -20px;
+      vertical-align: middle;
+      pointer-events: none;
+    }
+  </style>
+  <style>
+    :root {
+      --color-note: #0969da;
+      --color-tip: #1a7f37;
+      --color-warning: #9a6700;
+      --color-severe: #bc4c00;
+      --color-caution: #d1242f;
+      --color-important: #8250df;
+    }
+  </style>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-note: #2f81f7;
+        --color-tip: #3fb950;
+        --color-warning: #d29922;
+        --color-severe: #db6d28;
+        --color-caution: #f85149;
+        --color-important: #a371f7;
+      }
+    }
+  </style>
+  <style>
+    .markdown-alert {
+      padding: 0.5rem 1rem;
+      margin-bottom: 16px;
+      color: inherit;
+      border-left: .25em solid #888;
+    }
+
+    .markdown-alert>:first-child {
+      margin-top: 0
+    }
+
+    .markdown-alert>:last-child {
+      margin-bottom: 0
+    }
+
+    .markdown-alert .markdown-alert-title {
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      line-height: 1
+    }
+
+    .markdown-alert .markdown-alert-title .octicon {
+      margin-right: 0.5rem;
+      display: inline-block;
+      overflow: visible !important;
+      vertical-align: text-bottom;
+      fill: currentColor;
+    }
+
+    .markdown-alert.markdown-alert-note {
+      border-left-color: var(--color-note);
+    }
+
+    .markdown-alert.markdown-alert-note .markdown-alert-title {
+      color: var(--color-note);
+    }
+
+    .markdown-alert.markdown-alert-important {
+      border-left-color: var(--color-important);
+    }
+
+    .markdown-alert.markdown-alert-important .markdown-alert-title {
+      color: var(--color-important);
+    }
+
+    .markdown-alert.markdown-alert-warning {
+      border-left-color: var(--color-warning);
+    }
+
+    .markdown-alert.markdown-alert-warning .markdown-alert-title {
+      color: var(--color-warning);
+    }
+
+    .markdown-alert.markdown-alert-tip {
+      border-left-color: var(--color-tip);
+    }
+
+    .markdown-alert.markdown-alert-tip .markdown-alert-title {
+      color: var(--color-tip);
+    }
+
+    .markdown-alert.markdown-alert-caution {
+      border-left-color: var(--color-caution);
+    }
+
+    .markdown-alert.markdown-alert-caution .markdown-alert-title {
+      color: var(--color-caution);
+    }
+  </style>
+
+</head>
+
+<body class="vscode-body vscode-light">
+  <span id="markdown-mermaid" aria-hidden="true" data-dark-mode-theme="dark" data-light-mode-theme="default"></span>
+  <table>
+    <thead>
+      <tr>
+        <th><strong>Role</strong></th>
+        <th><strong>Casus</strong></th>
+        <th><strong>When to Use</strong></th>
+        <th><strong>Example</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Subject</td>
+        <td><strong>Nominativ</strong></td>
+        <td>- Who or what <u>is doing the action</u>?<br><br> - <strong>sein</strong> (to be)<br> -
+          <strong>werden</strong> (to become)<br> - <strong>bleiben</strong> (to remain)</td>
+        <td>- <strong>Der Junge</strong> spielt. (The boy is playing.)<br><br> - Er ist <strong>ein Lehrer</strong>. (He
+          is a teacher.)<br> - Sie wird <strong>eine Ärztin</strong>. (She is becoming a doctor.)<br> - Er bleibt
+          <strong>ein guter Freund</strong>. (He remains a good friend.)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Direct Object</td>
+        <td><strong>Akkusativ</strong><br> <em>Bewegung</em></td>
+        <td>- Who or what is <u>receiving the action</u>?<br>- Wohin? (To where...)<br><br> - <strong>durch</strong>
+          (through)<br> - <strong>für</strong> (for)<br> - <strong>gegen</strong> (against)<br> - <strong>ohne</strong>
+          (without)<br> - <strong>um</strong> (around)<br> - <strong>bis</strong> (until, to)<br> -
+          <strong>entlang</strong> (along)<br><br> - <strong>an</strong> (on, onto)<br> - <strong>auf</strong> (on,
+          onto)<br> - <strong>hinter</strong> (behind)<br> - <strong>in</strong> (in, into)<br> - <strong>neben</strong>
+          (next to)<br> - <strong>über</strong> (over)<br> - <strong>unter</strong> (under)<br> - <strong>vor</strong>
+          (in front of)<br> - <strong>zwischen</strong> (between)<br><br> - <strong>haben</strong> (to have)<br> -
+          <strong>sehen</strong> (to see)<br> - <strong>finden</strong> (to find)<br> - <strong>brauchen</strong> (to
+          need)<br> - <strong>kaufen</strong> (to buy)<br> - <strong>lesen</strong> (to read)<br> -
+          <strong>nehmen</strong> (to take)<br> - <strong>trinken</strong> (to drink)<br> - <strong>essen</strong> (to
+          eat)<br> - <strong>verstehen</strong> (to understand)<br> - <strong>hören</strong> (to hear)<br> -
+          <strong>machen</strong> (to make, to do)<br> - <strong>bekommen</strong> (to get, to receive)<br> -
+          <strong>lieben</strong> (to love)</td>
+        <td>- Ich sehe <strong>den Jungen</strong>. (I see the boy.)<br> - Wir fahren <strong>in die Stadt</strong>. (We
+          are driving to the city.)<br><br> - Wir gehen <strong>durch den Park</strong>. (We are walking through the
+          park.) <br> - Das Geschenk ist <strong>für meinen Freund</strong>. (The gift is for my friend.) <br> - Das
+          Team spielt <strong>gegen die Mannschaft</strong>. (The team is playing against the team.) <br> - Ich kann
+          nicht <strong>ohne meinen Kaffee</strong> arbeiten. (I can't work without my coffee.) <br> - Wir sitzen
+          <strong>um den Tisch</strong>. (We are sitting around the table.) <br> - Wir bleiben <strong>bis nächsten
+            Montag</strong>. (We are staying until next Monday.) <br> - Wir gehen den Fluss <strong>entlang</strong>.
+          (We are walking along the river.)<br><br> - Ich hänge das Bild <strong>an die Wand</strong>. (I am hanging the
+          picture on the wall.) <br> - Ich lege das Buch <strong>auf den Tisch</strong>. (I am putting the book on the
+          table.) <br> - Ich fahre das Auto <strong>hinter das Haus</strong>. (I am driving the car behind the house.)
+          <br> - Er geht <strong>ins Büro</strong>. (He is going into the office.) <br> - Ich stelle den Stuhl
+          <strong>neben den Tisch</strong>. (I am placing the chair next to the table.) <br> - Ich hänge die Lampe
+          <strong>über den Tisch</strong>. (I am hanging the lamp over the table.) <br> - Der Hund läuft <strong>unter
+            den Tisch</strong>. (The dog is running under the table.) <br> - Ich stelle das Auto <strong>vor das
+            Haus</strong>. (I am placing the car in front of the house.) <br> - Er geht <strong>zwischen die
+            Häuser</strong>. (He is going between the houses.)<br><br> - Ich habe <strong>einen Hund</strong>. (I have a
+          dog.)<br> - Ich sehe <strong>den Mann</strong>. (I see the man.)<br> - Ich finde <strong>den
+            Schlüssel</strong>. (I find the key.)<br> - Ich brauche <strong>einen Stift</strong>. (I need a pen.)<br> -
+          Ich kaufe <strong>ein Buch</strong>. (I am buying a book.)<br> - Ich lese <strong>die Zeitung</strong>. (I am
+          reading the newspaper.)<br> - Ich nehme <strong>den Bus</strong>. (I take the bus.)<br> - Ich trinke
+          <strong>einen Kaffee</strong>. (I am drinking a coffee.)<br> - Ich esse <strong>einen Apfel</strong>. (I am
+          eating an apple.)<br> - Ich verstehe <strong>die Aufgabe</strong>. (I understand the task.)<br> - Ich höre
+          <strong>die Musik</strong>. (I hear the music.)<br> - Ich mache <strong>die Hausaufgaben</strong>. (I am doing
+          the homework.)<br> - Ich bekomme <strong>einen Brief</strong>. (I am receiving a letter.)<br> - Ich liebe
+          <strong>dich</strong>. (I love you.)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Indirect Object</td>
+        <td><strong>Dativ</strong><br> <em>Statisch</em></td>
+        <td>- To whom or for whom <u>is the action done</u>?<br>- To indicate location (Wo?)<br> - To indicate time
+          (Wann?)<br><br> - <strong>ab</strong> (from/starting from)<br> - <strong>aus</strong> (from/out of)<br> -
+          <strong>bei</strong> (at/near/with)<br> - <strong>mit</strong> (with)<br> - <strong>nach</strong>
+          (after/to)<br> - <strong>seit</strong> (since/for)<br> - <strong>von</strong> (from/of)<br> -
+          <strong>zu</strong> (to)<br> - <strong>gegenüber</strong> (opposite/across from)<br><br> - <strong>an</strong>
+          (on)<br> - <strong>auf</strong> (on)<br> - <strong>hinter</strong> (behind)<br> - <strong>in</strong> (in)<br>
+          - <strong>neben</strong> (next to)<br> - <strong>über</strong> (over)<br> - <strong>unter</strong> (under)<br>
+          - <strong>vor</strong> (in front of)<br> - <strong>zwischen</strong> (between)<br><br> -
+          <strong>helfen</strong> (to help)<br> - <strong>danken</strong> (to thank)<br> - <strong>folgen</strong> (to
+          follow)<br> - <strong>glauben</strong> (to believe)</td>
+        <td>- Ich gebe <strong>dem Jungen</strong> ein Buch. (I give the boy a book.)<br>- Das Buch liegt <strong>auf
+            dem Tisch</strong>. (The book is on the table.) <br> - Wir treffen uns <strong>um 8 Uhr</strong>. (We meet
+          at 8 o'clock.)<br><br> - <strong>Ab dem nächsten Montag</strong> werde ich mehr trainieren. (Starting from
+          next Monday, I will train more.)<br> - Er kommt <strong>aus dem Haus</strong>. (He is coming out of the
+          house.) <br> - Sie wohnt <strong>bei ihren Eltern</strong>. (She lives with her parents.) <br> - Ich fahre
+          <strong>mit dem Zug</strong>. (I am traveling by train.) <br> - Wir fahren <strong>nach Berlin</strong>. (We
+          are driving to Berlin.) <br> - Ich wohne <strong>seit einem Jahr</strong> hier. (I have been living here for a
+          year.) <br> - Das Geschenk ist <strong>von meiner Tante</strong>. (The gift is from my aunt.) <br> - Wir gehen
+          <strong>zu dem Markt</strong>. (We are going to the market.) <br> - Das Café ist <strong>gegenüber dem
+            Bahnhof</strong>. (The café is opposite the train station.)<br><br> - Das Bild hängt <strong>an der
+            Wand</strong>. (The picture is hanging on the wall.) <br> - Das Buch liegt <strong>auf dem Tisch</strong>.
+          (The book is lying on the table.) <br> - Das Auto steht <strong>hinter dem Haus</strong>. (The car is parked
+          behind the house.) <br> - Er ist <strong>im Büro</strong>. (He is in the office.) <br> - Der Stuhl steht
+          <strong>neben dem Tisch</strong>. (The chair is next to the table.) <br> - Die Lampe hängt <strong>über dem
+            Tisch</strong>. (The lamp is hanging over the table.) <br> - Der Hund liegt <strong>unter dem
+            Tisch</strong>. (The dog is lying under the table.) <br> - Das Auto steht <strong>vor dem Haus</strong>.
+          (The car is parked in front of the house.) <br> - Der Park liegt <strong>zwischen den Häusern</strong>. (The
+          park is between the houses.)<br><br> - Ich helfe <strong>dem Kind</strong>. (I help the child.)<br> - Ich
+          danke <strong>der Frau</strong>. (I thank the woman.)<br> - Der Hund folgt <strong>dem Kind</strong>. (The dog
+          follows the child.)<br> - Ich glaube <strong>dem Lehrer</strong>. (I believe the teacher.)</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
